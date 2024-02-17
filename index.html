@@ -60,18 +60,22 @@
 
     <!-- button grid layout -->
     
-    <section>
+    <section class="w-full flex items-center justify-center bg-red-500 rounded-lg gap-3">
 
 
-      <div class="w-full bg-gray-500 p-3">
+      <div id="columnContainer" class="w-1/5 flex flex-col items-center justify-center rounded-lg p-3 gap-3">
+        
+      </div>
+      <div class="w-4/5 p-3">
 
-        <div id="buttonContainer" class="grid grid-cols-4 gap-3 items-center justify-center"></div>        
+        <div id="buttonContainer" class="grid grid-cols-4 gap-3 items-center justify-center rounded-lg"></div>        
         
       </div>
 
 
     </section>
     <script src="buttonLayout.js"></script>
+    <script src="columnLayout.js"></script>
 
   </body>
 </html>

@@ -1,5 +1,7 @@
 const seats = ["A1","A2","A3","A4","B1","B2","B3","B4","C1","C2","C3","C4","D1","D2","D3","D4","E1","E2","E3","E4","F1","F2","F3","F4","G1","G2","G3","G4","H1","H2","H3","H4","I1","I2","I3","I4","J1","J2","J3","J4"]
 
+
+
 // bookedSeat Array
 let bookedSeat = [];
 let TotalPrice = 0;
@@ -13,7 +15,7 @@ const createButtons = () => {
     seats.forEach(seat => {
         const button = document.createElement('button');
         button.textContent = seat;
-        button.className = "bg-lime-500 text-white py-2 px-4 rounded-xl w-[110px] h-[56px]";
+        button.className = "bg-gray-300 text-white py-2 px-4 rounded-xl w-[110px] h-[56px]";
         button.addEventListener('click', () => {
             const isAlreadyBooked = bookedSeat.some(booked =>  booked.seat === seat);
             if(isAlreadyBooked){
@@ -25,6 +27,10 @@ const createButtons = () => {
                     bookedSeat.push({seat,type:"Economy",price:550});
                     console.log(`${seat} booked as Economy class`);
                     updateBookingList();
+
+                    // toggle Button Color
+                    button.classList.remove('bg-gray-300');
+                    button.classList.add('disabled', 'bg-lime-500');
                     
                 }
                 else {
@@ -63,7 +69,7 @@ const updateBookingList = () => {
 
         // appending the value
         const appenedPriceHeader = document.getElementById('totalPriceId');
-        appenedPriceHeader.textContent = parseFloat(appenedPriceHeader.textContent) + TotalPrice;
+        appenedPriceHeader.textContent = parseFloat(appenedPriceHeader.textContent) + seat.price;
     })
 }
 
