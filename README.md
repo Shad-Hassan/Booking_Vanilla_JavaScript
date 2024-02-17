@@ -24,7 +24,7 @@ https://shad-hassan.github.io/Booking_Vanilla_JavaScript/
 
 ## What its about ?
 
-- Well , I mapped two arrays instead of trying to grid 50 buttons manually using tailwind (god forbid you ever try to make it static - like my boi [@hMd Maheen Billah](https://github.com/md-maheen-billah),
+- Well , I mapped two arrays instead of trying to grid 50 buttons manually using tailwind (god forbid you ever try to make it static - like my boi [@md-maheen-billah](https://github.com/md-maheen-billah),
 - The Challenge was , that I could only book four seats max while using vanilla JS and DOM (no more stateHook or prop abuse T_T )
 - Duplicate Seats cant be booked , and thus me and my ordeal of nested JS functions (coz clean code is such a myth)
 - I hope this helps you with DOM and JS interactiosn , do consider giving this repo a star if it helped :star2: :star2:
